@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore France</title>
+  <style>
+    /* 1. ELEMENT SELECTORS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #222;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+
+    img {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* 2. TWO ID SELECTORS */
+    #main-header {
+      background-color: #002395; /* French Flag Blue */
+      color: white;
+      padding: 25px;
+    }
+
+    #main-footer {
+      background-color: #ed2939; /* French Flag Red */
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    /* 3. TWO CLASS SELECTORS */
+    .gallery-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px;
+      flex-wrap: wrap;
+    }
+
+    .landmark-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 260px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* 4. ADDITIONAL FEATURE: Hover Lift & Border Highlight */
+    .landmark-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 35, 149, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ID Selector #1 -->
+  <header id="main-header">
+    <h1>Discover France</h1>
+    <p>Iconic Landmarks &amp; Culture</p>
+  </header>
+
+  <!-- Class Selector #1 -->
+  <main class="gallery-container">
+    
+    <!-- Class Selector #2 + Image #1 -->
+    <div class="landmark-card">
+      <img src="https://picsum.photos" alt="French chateau">
+      <h3>Loire Valley</h3>
+      <p>Famous for historic castles, vineyards, and scenic rivers.</p>
+    </div>
+
+    <!-- Class Selector #2 + Image #2 -->
+    <div class="landmark-card">
+      <img src="https://picsum.photos" alt="French Alps">
+      <h3>French Alps</h3>
+      <p>Snow-capped peaks ideal for skiing and mountain views.</p>
+    </div>
+
+    <!-- Class Selector #2 + Image #3 -->
+    <div class="landmark-card">
+      <img src="https://picsum.photos" alt="French street">
+      <h3>Historic Streets</h3>
+      <p>Charming cobblestone avenues lined with cafes and shops.</p>
+    </div>
+
+  </main>
+
+  <!-- ID Selector #2 -->
+  <footer id="main-footer">
+    <p>&copy; 2026 France Web Design Project</p>
+  </footer>
+
+</body>
+</html>
